@@ -1,0 +1,8 @@
+.env
+.gemtags
+ctags_for_ruby
+node_modules
+.git
+.tags
+token.js
+.ruby-version

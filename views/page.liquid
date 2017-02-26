@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StoryBlok - Demo</title>
+  <link href="{{ 'assets/styles.css' | asset_url }}" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <div class="uk-container uk-container-center">
+    <h1 class="uk-text-center uk-margin-large-top">Demo</h1>
+    <div id="root">
+      {% include story.content.component with blok: story.content %}
+    </div>
+  </div>
+
+  <script type="text/javascript" src="//app.storyblok.com/storyblok-latest.js"></script>
+  <script type="text/javascript">
+
+    storyblok.init();
+
+    storyblok.on('change', function() {
+      location.reload(true);
+    });
+
+  </script>
+</body>
