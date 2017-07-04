@@ -23,6 +23,7 @@ get '*' do
   logger = Logger.new(STDOUT)
   slug = params['splat'].join('/')
   slug = slug[1..-1]
+  slug = 'demo' if slug == '' # Set a default slug for the homepage
 
   Storyblok::Cache.client = Redis.new(:url => 'redis://localhost:6379')
   Storyblok::App.client = Storyblok::Client.new(
