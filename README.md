@@ -11,17 +11,24 @@ If you want to use your server or have already an existing project in which you 
 
 ## How can I start with a boilerplate
 
-The most efficient way to start a storyblok project as a developer would be with our [Command Line Interface](https://www.storyblok.com/docs/Guides/command-line-interface).
-
-```
-npm i storyblok -g
-storyblok
-```
-
-and choose your boilerplate. You can of course simply `download` or `clone` this repository as well.
+1. `download` or `clone` this repository
 
 ```
 git clone https://github.com/storyblok/sinatra-boilerplate
+```
+
+2. Install the dependencies
+
+```
+bundle install
+```
+
+3. Signup at Storyblok, create a Space and a Story with the slug "demo"
+
+4. Run the local server
+
+```
+rerun --pattern '{Gemfile,Gemfile.lock,app.rb,app/**/*.rb}' 'ruby app.rb'
 ```
 
 ## Configuration
