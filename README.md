@@ -25,7 +25,7 @@ bundle install
 
 3. Signup at Storyblok, create a Space and a Story with the slug "demo"
 
-4. Run the local server
+4. Run the local server and open your browser with the address localhost:4567
 
 ```
 rerun --pattern '{Gemfile,Gemfile.lock,app.rb,app/**/*.rb}' 'ruby app.rb'
