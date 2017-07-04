@@ -23,13 +23,14 @@ git clone https://github.com/storyblok/sinatra-boilerplate
 bundle install
 ```
 
-3. Signup at Storyblok, create a Space and a Story with the slug "demo"
-
-4. Run the local server and open your browser with the address localhost:4567
+3. Run the local server and open your browser with the address localhost:4567
 
 ```
 rerun --pattern '{Gemfile,Gemfile.lock,app.rb,app/**/*.rb}' 'ruby app.rb'
 ```
+
+4. Signup at Storyblok, create a Space and a Story with the slug "demo". In your space settings you can get the api token. Exchange it in Storyblok::Client.new in app.rb.
+
 
 ## Configuration
 In the `app.rb` all you need to change is the storyblok client settings - by adding your space information. [What is a Space?](https://www.storyblok.com/docs/terminology/space):
