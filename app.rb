@@ -19,6 +19,14 @@ configure do
   set :protection, :except => :frame_options
 end
 
+get '/favicon.ico' do
+  ''
+end
+
+get '/robots.txt' do
+  ''
+end
+
 get '*' do
   logger = Logger.new(STDOUT)
   slug = params['splat'].join('/')
@@ -45,5 +53,3 @@ get '*' do
 
   liquid :page, :locals => assigns
 end
-
-
