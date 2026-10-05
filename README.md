@@ -1,3 +1,6 @@
+> [!WARNING]
+> This repository is no longer maintained.
+
 <p align="center">
   <h1 align="center">sinatra-boilerplate for Storyblok</h1>
   <p align="center">A <a href="https://www.storyblok.com" target="_blank">Storyblok</a> boilerplate in ruby with sinatra to simply start your website with us.</p>
